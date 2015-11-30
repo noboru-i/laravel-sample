@@ -10,8 +10,10 @@ gem install --no-document checkstyle_filter-git saddler saddler-reporter-github 
 echo "********************"
 echo "* exec check       *"
 echo "********************"
+set +e
 vendor/bin/phpcs app --report=checkstyle --report-file=phpcs.result.xml --standard=phpcs.ruleset.xml
 vendor/bin/phpmd app xml phpmd.ruleset.xml --reportfile phpmd.result.xml
+set -e
 
 echo "********************"
 echo "* save outputs     *"
