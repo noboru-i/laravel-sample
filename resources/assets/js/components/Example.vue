@@ -21,3 +21,12 @@
         }
     }
 </script>
+<style scoped>
+@import "../../postcss/variables";
+.panel {
+  & .panel-body {
+    font-size: 40px;
+    color: var(--mainColor);
+  }
+}
+</style>

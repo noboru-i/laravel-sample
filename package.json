@@ -12,6 +12,10 @@
     "laravel-elixir-vue-2": "^0.2.0",
     "laravel-elixir-webpack-official": "^1.0.2",
     "lodash": "^4.16.2",
+    "postcss": "^5.2.16",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-discard-empty": "^2.1.0",
+    "postcss-import": "^9.1.0",
     "vue": "^2.0.1",
     "vue-resource": "^1.0.3"
   }
