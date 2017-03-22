@@ -10,3 +10,17 @@ composer create-project --prefer-dist laravel/laravel laravel-sample "5.3.*"
 vagrant box add laravel/homestead
 composer require laravel/homestead --dev
 ```
+
+## How to run
+
+```
+composer install
+php vendor/bin/homestead make
+# up vagrant
+vagrant up
+vagrant ssh
+cd Code/laravel-sample
+php artisan migrate
+yarn install
+yarn run dev # or yarn run prod
+```
