@@ -9,6 +9,8 @@ composer create-project --prefer-dist laravel/laravel laravel-sample "5.3.*"
 # prepare homestead
 vagrant box add laravel/homestead
 composer require laravel/homestead --dev
+# generate auth from template
+php artisan make:auth
 ```
 
 ## How to run
